@@ -82,7 +82,7 @@ if (score > 90) {
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24];
+let myFavoriteNumbers = [4,8,12,16,20,24, 96, 56];
 // Do not edit the code above.
 
 /*
@@ -90,7 +90,8 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
-
+let someNum = myFavoriteNumbers[4];
+console.log(someNum);
 
 ////////// PROBLEM 7 //////////
 
@@ -98,22 +99,31 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+if (myFavoriteNumbers.length < 7) {
+  console.log("There are not enough elements in this array");
+} else if (myFavoriteNumbers.length > 7) {
+  someNum = myFavoriteNumbers[6]; 
+}
+console.log(someNum);
 
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
-var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+let listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Do not edit the code above.
 
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for (i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3`);
+  }
+}
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
-var letters = ['A', 'B', 'C', 'D', 'E'];
+let letters = ['A', 'B', 'C', 'D', 'E'];
 // Do not edit the code above.
 
 /*
@@ -121,7 +131,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+for (i = 4; i > -1; i--) {
+  console.log(letters[i]);
+}
 
 ////////// Advanced Problems //////////
 
